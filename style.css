@@ -1,0 +1,232 @@
+/* Colors 
+#857DB1
+#3B3176
+#211858
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin: 55px auto 0;
+}
+
+h1.header-title {
+  font-family: "Poiret One", cursive;
+  text-align: center;
+}
+
+.header-line {
+  padding: 0 0 12px;
+  width: 400px;
+  margin: 0 auto 25px auto;
+  border-bottom: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: start;
+  flex-flow: row wrap;
+  flex-shrink: 2;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background-color: gray;
+  width: 68%;
+  margin: auto;
+}
+
+.navlinks a {
+  flex-basis: 400px;
+  color: black;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  width: 140px;
+  height: 20px;
+  float: left;
+  text-decoration: none;
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+
+a.navtext:hover {
+  background-color: blanchedalmond;
+}
+
+.bio-container {
+  text-align: center;
+  margin: auto;
+  width: 22%;
+  font-style: italic;
+}
+
+.avatar-img {
+  border: 3px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  width: 25vh;
+  height: 25vh;
+}
+
+.avatar-container {
+  transform: rotate(-2deg);
+  left: 10px;
+  margin: auto;
+}
+
+/* FLEXXXXXXXXXXXXXXXXXXARRRRRRRRRR */
+
+body {
+  background-color: 3B3176;
+  background-image: url("cool-background.png")
+ }
+
+a.divider {
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+a.active {
+  background-color: green;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: 68%;
+  background-color:white;
+  opacity: 0.75;
+}
+
+.content-container {
+  min-height: 43em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 74%;
+}
+
+.text1 {
+  color: black;
+  margin: 25px 10px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: stretch;
+}
+
+.text2 {
+  color: black;
+  margin: 25px 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: stretch;
+}
+
+.text3 {
+  color: black;
+  margin: 25px 10px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  justify-self: stretch;
+}
+
+.email-img {
+  border: 3px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  width: 25vh;
+  height: 25vh;
+  grid-area: 1 / 2 / 3 / 3;
+  margin-top: 10px;
+  justify-self: center;
+}
+
+.github-img {
+  border: 3px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  width: 25vh;
+  height: 25vh;
+  grid-area: 3 / 2 / 3 / 2;
+  justify-self: center;
+}
+
+.linkedin-img {
+  border: 3px solid rgba(255, 255, 255);
+  border-radius: 50%;
+  width: 25vh;
+  height: 25vh;
+  grid-area: 2 / 2 / 3 / 2;
+  margin-bottom: 10px;
+  justify-self: center;
+}
+
+.footer-container {
+  min-height: 10vh;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 10% 10% 10% 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 68%;
+  min-height: 50px;
+  background-color: gray;
+  margin: auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 3px;
+}
+
+.footer-index {
+  grid-area: 2 / 2 / 2 / 3;
+  justify-self: center;
+}
+
+.footer-portfolio {
+  grid-area: 2 / 3 / 2 / 3;
+  justify-self: center;
+}
+
+.footer-contact {
+  grid-area: 2 / 4 / 2 / 5;
+  justify-self: center;
+}
+
+.footer-linkedin {
+  grid-area: 3 / 3 / 3 / 3;
+  justify-self: start;
+}
+
+.footer-github {
+  grid-area: 3 / 3 / 3 / 3;
+  justify-self: center;
+}
+
+.footer-twitter {
+  grid-area: 3 / 3 / 3 / 4;
+  justify-self: end;
+}
+
+.footer-copyright {
+  grid-area: 5 / 2 / 5 / 5;
+  justify-self: center;
+}
+
+.footer-email {
+  grid-area: 4 / 2 / 4 / 5;
+  justify-self: center;
+}
