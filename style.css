@@ -31,7 +31,7 @@ h1.header-title {
   flex-flow: row wrap;
   flex-shrink: 2;
   border: 2px solid rgba(255, 255, 255, 0.4);
-  background-color: gray;
+  background-color: #C3A995;
   width: 68%;
   margin: auto;
 }
@@ -76,10 +76,10 @@ a.navtext:hover {
   margin: auto;
 }
 
-/* FLEXXXXXXXXXXXXXXXXXXARRRRRRRRRR */
+/* FLEXXXXXXXXXXXXXXXXXARRRRRRRRRR */
 
 body {
-  background-color: 3B3176;
+  background-color: #3B3176;
   background-image: url("cool-background.png")
  }
 
@@ -88,7 +88,7 @@ a.divider {
 }
 
 a.active {
-  background-color: green;
+  background-color: lightgray;
 }
 
 .container {
@@ -97,8 +97,7 @@ a.active {
   justify-content: space-around;
   margin: auto;
   width: 68%;
-  background-color:white;
-  opacity: 0.75;
+  background-color: rgba(255, 255, 255, 0.85)
 }
 
 .content-container {
@@ -179,7 +178,7 @@ footer {
   border: 2px solid rgba(255, 255, 255, 0.4);
   width: 68%;
   min-height: 50px;
-  background-color: gray;
+  background-color: #C3A995;
   margin: auto;
 }
 
