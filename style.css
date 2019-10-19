@@ -7,6 +7,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;  
 }
 
 .header {
@@ -20,7 +23,7 @@ h1.header-title {
 
 .header-line {
   padding: 0 0 12px;
-  width: 400px;
+  max-width: 33%;
   margin: 0 auto 25px auto;
   border-bottom: 1px solid black;
 }
@@ -29,18 +32,17 @@ h1.header-title {
   display: grid;
   grid-template-columns: 10% 10% 10% 1fr;
   border: 2px solid rgba(255, 255, 255, 0.4);
-  background-color: #C3A995;
+  background-color: #c3a995;
   width: 68%;
   margin: auto;
   padding: 20px 0;
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   font-size: 25px;
   color: black;
   justify-self: center;
-  
 }
 
 .navbar a:hover {
@@ -53,7 +55,6 @@ h1.header-title {
   width: 22%;
   font-style: italic;
 }
-
 
 .avatar-img {
   border: 3px solid rgba(255, 255, 255);
@@ -71,9 +72,9 @@ h1.header-title {
 /* FLEXXXXXXXXXXXXXXXXXARRRRRRRRRR */
 
 body {
-  background-color: #3B3176;
-  background-image: url("cool-background.png")
- }
+  background-color: #3b3176;
+  background-image: url("cool-background.png");
+}
 
 /* a.divider {
   border-right: 2px solid rgba(255, 255, 255, 0.4);
@@ -90,7 +91,7 @@ a.active {
   justify-content: space-around;
   margin: auto;
   width: 68%;
-  background-color: rgba(255, 255, 255, 0.85)
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .content-container {
@@ -166,12 +167,16 @@ a.active {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 10% 10% 10% 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  '. home portfolio contact .'
+  '. linkedin github twitter .'
+  '. email email email .'
+  '. copyright copyright copyright   .' ;
+   grid-template-columns: 1fr 10% 10% 10% 1fr;
   border: 2px solid rgba(255, 255, 255, 0.4);
   width: 68%;
   min-height: 50px;
-  background-color: #C3A995;
+  background-color: #c3a995;
   margin: auto;
 }
 
@@ -184,41 +189,66 @@ footer a {
 }
 
 .footer-index {
-  grid-area: 2 / 2 / 2 / 3;
+  grid-area: home;
   justify-self: center;
 }
 
 .footer-portfolio {
-  grid-area: 2 / 3 / 2 / 3;
+  grid-area: portfolio;
   justify-self: center;
 }
 
 .footer-contact {
-  grid-area: 2 / 4 / 2 / 5;
+  grid-area: contact;
   justify-self: center;
 }
 
 .footer-linkedin {
-  grid-area: 3 / 3 / 3 / 3;
-  justify-self: start;
+  grid-area: linkedin;
+  justify-self: self-end;
 }
 
 .footer-github {
-  grid-area: 3 / 3 / 3 / 3;
+  grid-area: github;
   justify-self: center;
 }
 
 .footer-twitter {
-  grid-area: 3 / 3 / 3 / 4;
-  justify-self: end;
+  grid-area: twitter;
+  justify-self: left;
 }
 
 .footer-copyright {
-  grid-area: 5 / 2 / 5 / 5;
+  grid-area: copyright;
   justify-self: center;
 }
 
 .footer-email {
-  grid-area: 4 / 2 / 4 / 5;
+  grid-area: email;
   justify-self: center;
+}
+@media screen and (max-width: 768px) {
+  .header-line{
+    max-width: 90%;
+  }
+  .content-container {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    grid-template-columns: 1fr 25% 25% 25% 1fr;
+    /* grid-template-areas:
+    ' home portfolio contact'
+    ' linkedin github twitter'
+    ' email email email'
+    ' copyright copyright copyright' ; */
+  }
+  .navbar {
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+  }
+
 }
