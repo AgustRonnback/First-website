@@ -131,6 +131,9 @@ a.active {
   grid-row-end: 4;
   justify-self: stretch;
 }
+.portfolio-placeholder{
+  justify-self: center;
+}
 
 .email-img {
   border: 3px solid rgba(255, 255, 255);
